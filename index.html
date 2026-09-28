@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cricket Career</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <!-- ============================= -->
+        <!-- PLAYER FORM -->
+        <!-- ============================= -->
+
+        <div id="formSection">
+
+            <h1>Player Information</h1>
+
+            <form id="playerForm">
+
+                <label>Name:</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    required
+                >
+
+
+                <label>Date of Birth:</label>
+
+                <input
+                    type="date"
+                    id="dob"
+                    required
+                >
+
+
+                <label>Photo URL:</label>
+
+                <input
+                    type="url"
+                    id="photoUrl"
+                    required
+                >
+
+
+                <label>Birthplace:</label>
+
+                <input
+                    type="text"
+                    id="birthplace"
+                    required
+                >
+
+
+                <label>Career:</label>
+
+                <textarea
+                    id="career"
+                    required
+                ></textarea>
+
+
+                <label>Number of Matches:</label>
+
+                <input
+                    type="number"
+                    id="matches"
+                    required
+                >
+
+
+                <label>Score:</label>
+
+                <input
+                    type="number"
+                    id="score"
+                    required
+                >
+
+
+                <label>Fifties:</label>
+
+                <input
+                    type="number"
+                    id="fifties"
+                    required
+                >
+
+
+                <label>Centuries:</label>
+
+                <input
+                    type="number"
+                    id="centuries"
+                    required
+                >
+
+
+                <label>Wickets:</label>
+
+                <input
+                    type="number"
+                    id="wickets"
+                    required
+                >
+
+
+                <label>Average:</label>
+
+                <input
+                    type="number"
+                    id="average"
+                    required
+                >
+
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- SEARCH SECTION -->
+        <!-- ============================= -->
+
+        <div id="searchSection">
+
+            <h2>Search Player</h2>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Enter player name"
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- PLAYER PROFILE -->
+        <!-- ============================= -->
+
+        <div id="searchResult"></div>
+
+
+
+        <!-- ============================= -->
+        <!-- ADD PLAYER BUTTON -->
+        <!-- ============================= -->
+
+        <button id="addPlayerBtn">
+            Add Player
+        </button>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

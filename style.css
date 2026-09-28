@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f5f5;
+
+    margin: 0;
+
+    padding: 30px;
+
+}
+
+
+.container {
+
+    width: 600px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* ============================= */
+/* HEADINGS */
+/* ============================= */
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+h2 {
+
+    margin-top: 20px;
+
+}
+
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+}
+
+
+textarea {
+
+    height: 120px;
+
+    resize: vertical;
+
+}
+
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+button {
+
+    margin-top: 20px;
+
+    padding: 10px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #2e8b57;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    opacity: 0.9;
+
+}
+
+
+/* ============================= */
+/* SEARCH */
+/* ============================= */
+
+#searchSection {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #ddd;
+
+}
+
+
+.search-box {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.search-box input {
+
+    flex: 1;
+
+}
+
+
+.search-box button {
+
+    margin-top: 0;
+
+}
+
+
+/* ============================= */
+/* PLAYER PROFILE */
+/* ============================= */
+
+#searchResult {
+
+    margin-top: 25px;
+
+}
+
+
+.player-card {
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: #fafafa;
+
+}
+
+
+.player-card img {
+
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin-bottom: 15px;
+
+}
+
+
+.player-card h2 {
+
+    margin-top: 0;
+
+}
+
+
+.player-card p {
+
+    margin: 8px 0;
+
+}
+
+
+/* ============================= */
+/* ADD PLAYER BUTTON */
+/* ============================= */
+
+#addPlayerBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ============================= */
+/* HIDDEN STATES */
+/* ============================= */
+
+#searchResult {
+
+    display: none;
+
+}
+
+
+#searchSection {
+
+    display: block;
+
+}
