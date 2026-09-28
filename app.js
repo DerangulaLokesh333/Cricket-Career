@@ -11,9 +11,7 @@ const addPlayerBtn = document.getElementById("addPlayerBtn");
 let editingPlayerId = null;
 
 
-// =====================================
-// ADD / UPDATE PLAYER
-// =====================================
+
 
 playerForm.addEventListener("submit", function (event) {
 
@@ -53,9 +51,7 @@ playerForm.addEventListener("submit", function (event) {
         JSON.parse(localStorage.getItem("players")) || [];
 
 
-    // =================================
-    // UPDATE EXISTING PLAYER
-    // =================================
+    
 
     if (editingPlayerId) {
 
@@ -103,9 +99,7 @@ playerForm.addEventListener("submit", function (event) {
     }
 
 
-    // =================================
-    // ADD NEW PLAYER
-    // =================================
+    
 
     players.push(player);
 
@@ -126,9 +120,7 @@ playerForm.addEventListener("submit", function (event) {
 });
 
 
-// =====================================
-// SEARCH PLAYER
-// =====================================
+
 
 searchBtn.addEventListener("click", function () {
 
@@ -158,9 +150,7 @@ searchBtn.addEventListener("click", function () {
     });
 
 
-    // =================================
-    // PLAYER FOUND
-    // =================================
+    
 
     if (player) {
 
@@ -171,10 +161,6 @@ searchBtn.addEventListener("click", function () {
     }
 
 
-    // =================================
-    // PLAYER NOT FOUND
-    // =================================
-
     else {
 
         alert("Player not found.");
@@ -184,9 +170,6 @@ searchBtn.addEventListener("click", function () {
 });
 
 
-// =====================================
-// SHOW PLAYER PROFILE
-// =====================================
 
 function showPlayerProfile(player) {
 
@@ -306,9 +289,6 @@ function showPlayerProfile(player) {
 }
 
 
-// =====================================
-// EDIT PLAYER
-// =====================================
 
 function editPlayer(playerId) {
 
@@ -402,9 +382,7 @@ function editPlayer(playerId) {
 }
 
 
-// =====================================
-// DELETE PLAYER
-// =====================================
+
 
 function deletePlayer(playerId) {
 
@@ -490,9 +468,6 @@ function deletePlayer(playerId) {
 }
 
 
-// =====================================
-// ADD PLAYER BUTTON
-// =====================================
 
 addPlayerBtn.addEventListener("click", function () {
 
@@ -542,9 +517,7 @@ addPlayerBtn.addEventListener("click", function () {
 });
 
 
-// =====================================
-// PAGE LOAD
-// =====================================
+
 
 formSection.style.display = "block";
 
